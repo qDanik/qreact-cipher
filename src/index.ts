@@ -1,4 +1,4 @@
-export { Cipher } from './cipher';
+import { Cipher } from './cipher';
 
 declare global {
     interface Window {
@@ -7,3 +7,4 @@ declare global {
     }
 }
 
+export default Cipher;

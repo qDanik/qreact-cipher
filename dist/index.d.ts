@@ -22,4 +22,4 @@ declare class Cipher implements ICipher {
     decrypt(data: any): string;
 }
 
-export { Cipher };
+export default Cipher;

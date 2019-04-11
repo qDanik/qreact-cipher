@@ -1,4 +1,4 @@
-'use strict';Object.defineProperty(exports,'__esModule',{value:true});function _interopDefault(e){return(e&&(typeof e==='object')&&'default'in e)?e['default']:e}var Base64=_interopDefault(require('base-64')),encBas64=_interopDefault(require('crypto-js/enc-base64')),encUtf8=_interopDefault(require('crypto-js/enc-utf8')),AES=_interopDefault(require('crypto-js/aes'));var Cipher = /** @class */ (function () {
+'use strict';function _interopDefault(e){return(e&&(typeof e==='object')&&'default'in e)?e['default']:e}var Base64=_interopDefault(require('base-64')),encBas64=_interopDefault(require('crypto-js/enc-base64')),encUtf8=_interopDefault(require('crypto-js/enc-utf8')),AES=_interopDefault(require('crypto-js/aes'));var Cipher = /** @class */ (function () {
     function Cipher() {
         this.key = '';
         this.setKey(window.CIPHER_KEY);
@@ -21,4 +21,4 @@
         return this.toString(decrypted);
     };
     return Cipher;
-}());exports.Cipher=Cipher;
+}());module.exports=Cipher;
